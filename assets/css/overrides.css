@@ -1,0 +1,254 @@
+/**
+ * This file is part of webtoolsnz\smartcities-dashboard
+ *
+ * @copyright Copyright (c) 2017 Webtools Ltd
+ * @license http://opensource.org/licenses/MIT
+ * @link https://github.com/webtoolsnz/smartcities-dashboard
+ * @package webtoolsnz/smartcities-dashboard
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+body select,
+body select.form-control {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sidebar .avatar {
+  float: left;
+  width: 60px;
+  padding: 5px 15px;
+}
+
+.sidebar .info {
+  float: left;
+  width: 170px;
+  padding: 5px 15px;
+}
+
+.sidebar .user .name {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+}
+
+.sidebar .user .status {
+  color: #fff;
+}
+
+.sidebar .user .status img {
+  vertical-align: initial;
+}
+
+div.infobox {
+  background-color: #fff;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.infobox .header {
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.infobox .footer {
+  text-align: right;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.topline {
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+
+.weather {
+  border-color: #0192af;
+}
+
+.weather .footer {
+  background-color: #0192af;
+  color: #ffffff;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+.mockwrapper .mockbox {
+  margin-bottom: 20px;
+}
+
+.mockbox img {
+  width: 100%;
+}
+
+.mockwrapper {
+  padding: 0;
+}
+
+.navbar-custom-menu {
+  color: #fff;
+}
+.navbar-custom-menu img {
+  height: 18px;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.site-error {
+  margin-top: 100px;
+}
+
+.site-index {
+  margin-top: 15px;
+}
+
+#gizmo-info {
+  display: block;
+  margin: 10px 0;
+  padding: 0;
+  min-height: 100px;
+  position: relative;
+}
+
+#gizmo-info .overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+}
+
+#gizmo-info a {
+  display: block;
+  padding: 10px;
+}
+
+#gizmo-info b {
+  margin: 0 10px;
+}
+
+.gizmo-desc-sub {
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+}
+
+@media(max-width: 767px) {
+  .navbar-fixed-top:before {
+    background-image: url(../img/nav-gradient.png);
+    background-position: center top;
+    background-repeat: repeat-x;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .breadcrumb {
+    display: none;
+  }
+  section.content {
+    margin: 20px 0;
+    padding: 0;
+  }
+  .gizmo-group {
+    padding: 0;
+  }
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+}
+
+.main-sidebar {
+  position: fixed;
+  top: 50px;
+  padding-top: 0;
+}
+
+section.content-header {
+  margin: 50px 0 15px 0;
+  padding: 0;
+}
+
+.content-header h1 {
+  padding: 15px 30px 0;
+}
+
+.content-header>.breadcrumb {
+  right: 25px;
+}
+
+@media (max-width: 991px) {
+  .content-header>.breadcrumb {
+    background: transparent;
+  }
+
+  .content-header>.breadcrumb {
+    right: 10px;
+  }
+}
+
+.nav-tabs-custom {
+  border-radius: 6px;
+}
+
+.nav-tabs-custom>.nav-tabs {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+select {
+  padding: 0 15px 0 5px;
+}
+
+.sidebar-menu>li>a>.fa, .sidebar-menu>li>a>.glyphicon, .sidebar-menu>li>a>.ion {
+  text-align: center;
+}
+
+@media(max-width: 767px) {
+  .main-header .logo {
+    display: none;
+  }
+
+  .main-header>.navbar {
+    min-height: 20px;
+  }
+
+  .navbar-custom-menu .navbar-nav>li>a,
+  .main-header .sidebar-toggle {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  section.content-header {
+    margin-top: 30px;
+  }
+
+  .content-header h1.active {
+    display: none;
+  }
+}
+
+.module-smartcities-dashboard .content-wrapper {
+  background-color: #ffffff;
+}
+
+.wrapper > footer {
+  text-align: center;
+  font-size: 11px;
+}
+
+.box-header.with-border {
+  border: none;
+}

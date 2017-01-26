@@ -1,0 +1,89 @@
+{
+    "name": "webtoolsnz/smartcities-dashboard",
+    "description": "Smart Cities Dashboard",
+    "keywords": ["yii2", "dashboard"],
+    "homepage": "https://github.com/webtoolsnz/smartcities-dashboard",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Webtools",
+            "email": "support@webtools.co.nz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "composer/composer": "dev-master",
+        "symfony/console" : "~2.8",
+        "symfony/finder" : "~2.8",
+        "symfony/process" : "~2.8",
+        "symfony/filesystem" : "~2.8",
+        "yiisoft/yii2": "^2.0.7",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "webtoolsnz/yii2-widgets": "*",
+        "webtoolsnz/yii2-require-login": "^1.0",
+        "webtoolsnz/yii2-validators": "^0.1.4",
+        "webtoolsnz/yii2-admin-lte": "^0.1.15",
+        "miloschuman/yii2-highcharts-widget": "^4.2",
+	    "guzzlehttp/guzzle": "~5.0|~4.0",
+        "codezeen/yii2-fastclick": "*",
+        "phpoffice/phpexcel": "^1.8",
+        "bower-asset/mustache.js": "^2.3"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*",
+        "webtoolsnz/yii2-giiant" : "*",
+        "codeception/codeception": "*",
+        "codeception/specify": "*",
+        "codeception/verify": "*",
+        "codeception/c3": "*"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/webtoolsnz/yii2-require-login.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/webtoolsnz/yii2-giiant.git"
+        }
+    ],
+    "config": {
+        "process-timeout": 1800,
+        "preferred-install": "dist",
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ],
+        "post-install-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ],
+        "post-update-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ]
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "runtime": "0777",
+                    "web/assets": "0777",
+                    "yii": "0755"
+                }
+            ],
+            "generateCookieValidationKey": [
+                "config/web.php"
+            ]
+        },
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

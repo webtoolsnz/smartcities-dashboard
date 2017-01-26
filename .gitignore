@@ -1,0 +1,17 @@
+.idea
+nbproject
+.buildpath
+.project
+.settings
+Thumbs.db
+/vendor
+.DS_Store
+.vagrant
+auth.json
+.sass-cache
+/build
+/c3.php
+bin/
+
+environment.php
+environment.config.php

@@ -1,0 +1,483 @@
+/**
+ * This file is part of webtoolsnz\smartcities-dashboard
+ *
+ * @copyright Copyright (c) 2017 Webtools Ltd
+ * @license http://opensource.org/licenses/MIT
+ * @link https://github.com/webtoolsnz/smartcities-dashboard
+ * @package webtoolsnz/smartcities-dashboard
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+.gizmo {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+    transition: transform 0.1s linear, box-shadow 0.1s linear;
+    border-radius: 6px;
+}
+
+.gizmo > a {
+    color: #333;
+    display: block;
+    min-height: 90px;
+}
+
+.gizmo > a:after {
+    content: 'Go to ' attr(data-dash) ' dashboard';
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(10px);
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.1s linear, opacity 0.1s linear;
+}
+
+.gizmo:hover > a:after {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0px);
+    transition: transform 0.1s linear, opacity 0.1s linear;
+}
+.gizmo:hover {
+    transform: translateX(-2px) translateY(-2px);
+    transition: transform 0.1s linear, box-shadow 0.1s linear;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.4);
+}
+
+.gizmo .info-box-icon img {
+    vertical-align: top;
+}
+
+.gizmo .overlay,.overlay-wrapper>.overlay,.gizmo>.loading-img,.overlay-wrapper>.loading-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.gizmo .overlay,.overlay-wrapper .overlay {
+    z-index: 50;
+    background: rgba(255,255,255,1.0);
+    border-radius: 3px
+}
+
+.gizmo .overlay>.fa,.overlay-wrapper .overlay>.fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    color: #000;
+    font-size: 30px
+}
+
+.gizmo.height2 {
+    height: 190px;
+}
+
+.gizmo.height4 {
+    height: 400px;
+}
+
+.gizmo.width6 {
+    width: 100%;
+}
+
+#dashlinks {
+    display: none;
+    overflow: hidden;
+}
+
+.gizmo.width2 {
+    width: 31%;
+    float: left;
+    margin: 1%;
+}
+
+.gizmo.width3,
+.gizmo.width3 + .gizmo.width3 + .gizmo.width3 {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.gizmo.width3 + .gizmo.width3,
+.gizmo.width3 + .gizmo.width3 + .gizmo.width3 + .gizmo.width3 {
+    margin-right: 0;
+}
+
+.gizmo h4 {
+    text-transform: uppercase;
+}
+
+.gizmo h4.big-data {
+    margin: 5px 0 0;
+    font-size: 14px;
+    height: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gizmo span.big-data {
+    font-size: 16px;
+    display: block;
+    text-indent: 10px;
+}
+
+.gizmo.height2 .big-data {
+    font-size: 14px
+}
+
+.gizmo.height2 div[class^="col"] {
+    height: 135px;
+    margin-top: -5px;
+}
+
+.gizmo.height4 div[class^="col"] {
+    height: 335px;
+    margin-top: -5px;
+}
+
+.gizmo .box-footer {
+    display: none;
+}
+
+.gizmo .box-header button {
+    display: none;
+}
+
+.gizmo .row {
+    margin: 0;
+}
+
+.gizmo .gizmo-body {
+    overflow: hidden;
+}
+
+.nav-tabs-custom>.tab-content {
+    background-color: transparent;
+}
+
+.gizmo .nav-tabs {
+    border-color: rgba(255,255,255,0.4);
+}
+
+.gizmo.nav-tabs-custom>.nav-tabs.pull-right>li:first-of-type.active>a {
+    border-left-color: rgba(255,255,255,0.4);
+}
+
+.gizmo .nav-tabs li:first-child {
+    border-top-right-radius: 6px;
+}
+
+.gizmo .gizmo-body,
+.gizmo .tab-pane,
+.gizmo div[data-map] {
+    height: 100%;
+}
+
+.gizmo.height4 .gizmo-body {
+    height: 360px;
+}
+
+.gizmo.height2 .gizmo-body {
+    height: 135px;
+    padding: 5px 0 0;
+}
+
+.gizmo.height4 .canvas-holder {
+    height: 100%;
+}
+
+.gizmo canvas {
+    display: block;
+}
+
+.gizmo .sparkline canvas {
+    vertical-align: middle !important;
+    margin-left: 5px;
+    position: static;
+}
+
+.gizmo .credits-link {
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    color: rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s linear;
+}
+
+.gizmo:hover .credits-link {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.25s linear;
+}
+
+.gizmo .vertical-scroll,
+.gizmo-sidebar {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gizmo-timeline {
+    height: 100%;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.gizmo-timeline li {
+    margin-left: 85px;
+    padding: 5px 0 5px 15px;
+    border-left: 1px solid #000000;
+    list-style-type: none;
+    position: relative;
+}
+
+.gizmo-timeline li:before {
+    position: absolute;
+    left: -85px;
+    top: 10px;
+    content: attr(data-date);
+}
+
+.gizmo-timeline li:after {
+    position: absolute;
+    left: -6px;
+    top: 10px;
+    content: "\f111";
+    font-family: FontAwesome;
+}
+
+.gizmo-timeline li > span {
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgb(244, 244, 245);
+    border-radius: 6px;
+    display: block;
+}
+
+.gizmo-timeline li.now {
+    border-left: none;
+    border-bottom: 1px dashed #000000;
+    opacity: 0.3;
+    padding: 0;
+    margin: 0;
+}
+
+.gizmo-timeline li.now:before,
+.gizmo-timeline li.now:after {
+    display: none;
+}
+
+.gizmo .line-legend,
+.gizmo .bar-legend {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    border: 1px solid #f4f4f4;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.gizmo .line-legend li,
+.gizmo .bar-legend li {
+    list-style-type: none;
+}
+
+.gizmo .line-legend span,
+.gizmo .bar-legend span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #444;
+    margin-right: 5px;
+}
+
+.pie-legend {
+    display: block;
+    border: 1px solid #FFFFFF;
+    height: 16px;
+    width: 16px;
+    margin: 2px 0 0;
+}
+
+.gizmo .gm-style h4 {
+    color: #444;
+}
+
+@media(max-width: 767px) {
+    #dashlinks {
+        display: block;
+    }
+
+    #dashlinks .info-box-text {
+        font-size: 11px;
+    }
+
+    #dashlinks .current {
+        box-shadow: 0px 4px 2px 0px rgba(0,0,0,0.9);
+    }
+
+    .gizmo,
+    .gizmo:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .gizmo-body {
+        padding: 0;
+    }
+
+    .info-box .gizmo-body {
+        padding: 5px 10px;
+    }
+
+    .gizmo .overlay,.overlay-wrapper .overlay {
+        background: rgba(255,255,255,0.8);
+    }
+
+    .gizmo > a:before {
+        content: '\f08e';
+        font-family: FontAwesome;
+        position: absolute;
+        top: 0;
+        right: 2px;
+        color: #aaa;
+        display: none;
+    }
+
+    .gizmo > a:after,
+    .gizmo:hover > a:after {
+        display: none;
+    }
+
+    .gizmo .credits-link {
+        padding: 5px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .gizmo.width2 > a .info-box-text,
+    .gizmo.width3 > a .info-box-text {
+        text-align: center;
+    }
+
+    .gizmo.width2 .info-box-icon,
+    .gizmo.width3 .info-box-icon {
+        display: none;
+    }
+
+    .gizmo.width2 > a .info-box-icon,
+    .gizmo.width3 > a .info-box-icon {
+        background: none;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .gizmo.width2.info-box,
+    .gizmo.width2 > a,
+    .gizmo.width2 > a .info-box-content {
+        min-height: 50px;
+        font-weight: bold;
+    }
+
+    .gizmo.width3 > a .info-box-content {
+        min-height: 50px;
+        font-weight: bold;
+    }
+
+    .gizmo.height2 .gizmo-body {
+
+    }
+
+    .gizmo.width3 .box-header {
+        padding: 5px 0 0;
+    }
+
+    .gizmo.width3 h3,
+    .gizmo.width3 h4 {
+        font-size: 14px;
+    }
+
+    .gizmo h3,
+    .gizmo h4 {
+        padding-left: 5px;
+    }
+
+    .gizmo.height2 .gizmo-body {
+        padding: 0;
+    }
+
+    .gizmo.width2 .info-box-content,
+    .gizmo.width3 .info-box-content {
+        margin-left: 0;
+    }
+
+    .gizmo.width3,
+    .gizmo.width3 + .gizmo.width3 + .gizmo.width3 {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .gizmo.width3 + .gizmo.width3,
+    .gizmo.width3 + .gizmo.width3 + .gizmo.width3 + .gizmo.width3 {
+        margin-left: 1%;
+    }
+
+    .progress-description, .info-box-text {
+        white-space: normal;
+    }
+
+    .gizmo.nav-tabs-custom>.tab-content {
+        padding: 0;
+    }
+
+    .gizmo.height2,
+    .gizmo.height2 .gizmo-body,
+    .gizmo.height4,
+    .gizmo.height4 .gizmo-body {
+        height: auto;
+    }
+
+    .gizmo.height4 div[data-map] {
+        min-height: 360px;
+    }
+
+    .gizmo.height4 div[class^="col"],
+    .gizmo.height2 div[class^="col"] {
+        height: auto;
+    }
+
+    .gizmo.height4 .canvas-holder {
+        max-height: 200px;
+    }
+
+    .gizmo.width3 canvas.gizmo-pie,
+    .gizmo.width3 .pie-legend {
+        display: none;
+    }
+
+    .gizmo canvas.gizmo-pie {
+        margin: 10px 0;
+    }
+
+    .gizmo-timeline {
+        max-height: 360px;
+    }
+}

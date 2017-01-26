@@ -1,0 +1,35 @@
+#
+# This file is part of webtoolsnz\smartcities-dashboard
+#
+# @copyright Copyright (c) 2017 Webtools Ltd
+# @license http://opensource.org/licenses/MIT
+# @link https://github.com/webtoolsnz/smartcities-dashboard
+# @package webtoolsnz/smartcities-dashboard
+#
+# For the full copyright and license information, please view the LICENSE
+# file that was distributed with this source code.
+#
+
+    IndexIgnore *
+    Options +followSymlinks
+
+    <ifModule mod_rewrite.c>
+        RewriteEngine on
+
+        # Redirect to 503/maintenance page if maintenance mode active
+        #RewriteCond %{REMOTE_ADDR} !^123\.456\.789\.000
+        RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
+        RewriteCond %{DOCUMENT_ROOT}/maintenance.enable -f
+        RewriteCond %{SCRIPT_FILENAME} !maintenance.html
+        RewriteRule ^.*$ /maintenance.html [R=503,L]
+        ErrorDocument 503 /maintenance.html
+        Header Set Cache-Control "max-age=0, no-store"
+
+        # if a directory or a file exists, use it directly
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+
+        # otherwise forward it to index.php
+        RewriteRule ^(.*)$ index.php
+    </ifModule>
+

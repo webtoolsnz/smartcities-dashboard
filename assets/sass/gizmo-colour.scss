@@ -1,0 +1,80 @@
+/**
+ * This file is part of webtoolsnz\smartcities-dashboard
+ *
+ * @copyright Copyright (c) 2017 Webtools Ltd
+ * @license http://opensource.org/licenses/MIT
+ * @link https://github.com/webtoolsnz/smartcities-dashboard
+ * @package webtoolsnz/smartcities-dashboard
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+@mixin scheme($name, $main, $text, $gradientTop: null, $gradientBottom: null) {
+  .gizmo.#{$name} {
+    border-top-color: $main;
+    background-color: $main;
+    @if ($gradientTop) {
+      background: linear-gradient(to bottom, $gradientTop 0%, $gradientBottom 100%);
+    }
+    color: $text;
+  }
+  .gizmo.#{$name} .info-box-icon,
+  .gizmo.#{$name}.info-box .progress-bar {
+    background-color: $main;
+    color: $text;
+  }
+
+  .gizmo.#{$name}.nav-tabs-custom > .nav-tabs > li.active {
+    border-top-color: $main;
+  }
+
+  #gizmo-info.#{$name} > a {
+    background-color: $main;
+    color: $text;
+  }
+
+  .gizmo.#{$name} .gizmo-timeline li {
+    border-color: $text;
+  }
+
+  .gizmo.#{$name}.nav-tabs-custom>.nav-tabs>li.active>a,
+  .gizmo.#{$name}.nav-tabs-custom>.nav-tabs>li.active:hover>a,
+  .gizmo.#{$name} .gizmo-timeline li > span {
+    background-color: $main;
+    color: $text;
+  }
+
+  .gizmo.#{$name}.nav-tabs-custom>.nav-tabs>li.header,
+  .gizmo.#{$name}.nav-tabs-custom>.nav-tabs>li>a,
+  .gizmo.#{$name} h3 {
+    color: $text;
+  }
+
+  @media(max-width: 767px) {
+    .gizmo.width2.#{$name} > a,
+    .gizmo.width2.#{$name} > a:before,
+    .gizmo.width2.#{$name} > a:after,
+    .gizmo.width3.#{$name} > a,
+    .gizmo.width3.#{$name} > a:before,
+    .gizmo.width3.#{$name} > a:after {
+      background-color: $main;
+      @if ($gradientTop) {
+        background: linear-gradient(to bottom, $gradientTop 0%, $gradientBottom 100%);
+      }
+      color: $text;
+    }
+  }
+}
+
+@include scheme(teal, #0192AF, #000000);
+@include scheme(green, #77a834, #FFFFFF, #92C749, #7CB82F);
+@include scheme(blue, #1e89b3, #FFFFFF, #34B3E4, #00A0DC);
+@include scheme(yellow, #FDD478, #000000);
+@include scheme(red, #FA8B80, #FFFFFF, #F26048, #EF352A);
+@include scheme(mint, #53D3BA, #000000);
+@include scheme(purple, #660066, #FFFFFF, #A487BA, #8D6CAB);
+@include scheme(brown, #663300, #000000);
+@include scheme(pink, #FF3399, #FFFFFF, #EE62A2, #DC4B89);
+@include scheme(slate, #2F4F4F, #000000);
+@include scheme(orange, #FF9900, #FFFFFF, #EC9F48, #E68523);

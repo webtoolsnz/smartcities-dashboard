@@ -1,0 +1,563 @@
+/**
+ * This file is part of webtoolsnz\smartcities-dashboard
+ *
+ * @copyright Copyright (c) 2017 Webtools Ltd
+ * @license http://opensource.org/licenses/MIT
+ * @link https://github.com/webtoolsnz/smartcities-dashboard
+ * @package webtoolsnz/smartcities-dashboard
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+.gizmo.teal {
+  border-top-color: #0192AF;
+  background-color: #0192AF;
+  color: #000000;
+}
+
+.gizmo.teal .info-box-icon,
+.gizmo.teal.info-box .progress-bar {
+  background-color: #0192AF;
+  color: #000000;
+}
+
+.gizmo.teal.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #0192AF;
+}
+
+#gizmo-info.teal > a {
+  background-color: #0192AF;
+  color: #000000;
+}
+
+.gizmo.teal .gizmo-timeline li {
+  border-color: #000000;
+}
+
+.gizmo.teal.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.teal.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.teal .gizmo-timeline li > span {
+  background-color: #0192AF;
+  color: #000000;
+}
+
+.gizmo.teal.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.teal.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.teal h3 {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.teal > a,
+  .gizmo.width2.teal > a:before,
+  .gizmo.width2.teal > a:after,
+  .gizmo.width3.teal > a,
+  .gizmo.width3.teal > a:before,
+  .gizmo.width3.teal > a:after {
+    background-color: #0192AF;
+    color: #000000;
+  }
+}
+.gizmo.green {
+  border-top-color: #77a834;
+  background-color: #77a834;
+  background: linear-gradient(to bottom, #92C749 0%, #7CB82F 100%);
+  color: #FFFFFF;
+}
+
+.gizmo.green .info-box-icon,
+.gizmo.green.info-box .progress-bar {
+  background-color: #77a834;
+  color: #FFFFFF;
+}
+
+.gizmo.green.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #77a834;
+}
+
+#gizmo-info.green > a {
+  background-color: #77a834;
+  color: #FFFFFF;
+}
+
+.gizmo.green .gizmo-timeline li {
+  border-color: #FFFFFF;
+}
+
+.gizmo.green.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.green.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.green .gizmo-timeline li > span {
+  background-color: #77a834;
+  color: #FFFFFF;
+}
+
+.gizmo.green.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.green.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.green h3 {
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.green > a,
+  .gizmo.width2.green > a:before,
+  .gizmo.width2.green > a:after,
+  .gizmo.width3.green > a,
+  .gizmo.width3.green > a:before,
+  .gizmo.width3.green > a:after {
+    background-color: #77a834;
+    background: linear-gradient(to bottom, #92C749 0%, #7CB82F 100%);
+    color: #FFFFFF;
+  }
+}
+.gizmo.blue {
+  border-top-color: #1e89b3;
+  background-color: #1e89b3;
+  background: linear-gradient(to bottom, #34B3E4 0%, #00A0DC 100%);
+  color: #FFFFFF;
+}
+
+.gizmo.blue .info-box-icon,
+.gizmo.blue.info-box .progress-bar {
+  background-color: #1e89b3;
+  color: #FFFFFF;
+}
+
+.gizmo.blue.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #1e89b3;
+}
+
+#gizmo-info.blue > a {
+  background-color: #1e89b3;
+  color: #FFFFFF;
+}
+
+.gizmo.blue .gizmo-timeline li {
+  border-color: #FFFFFF;
+}
+
+.gizmo.blue.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.blue.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.blue .gizmo-timeline li > span {
+  background-color: #1e89b3;
+  color: #FFFFFF;
+}
+
+.gizmo.blue.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.blue.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.blue h3 {
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.blue > a,
+  .gizmo.width2.blue > a:before,
+  .gizmo.width2.blue > a:after,
+  .gizmo.width3.blue > a,
+  .gizmo.width3.blue > a:before,
+  .gizmo.width3.blue > a:after {
+    background-color: #1e89b3;
+    background: linear-gradient(to bottom, #34B3E4 0%, #00A0DC 100%);
+    color: #FFFFFF;
+  }
+}
+.gizmo.yellow {
+  border-top-color: #FDD478;
+  background-color: #FDD478;
+  color: #000000;
+}
+
+.gizmo.yellow .info-box-icon,
+.gizmo.yellow.info-box .progress-bar {
+  background-color: #FDD478;
+  color: #000000;
+}
+
+.gizmo.yellow.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #FDD478;
+}
+
+#gizmo-info.yellow > a {
+  background-color: #FDD478;
+  color: #000000;
+}
+
+.gizmo.yellow .gizmo-timeline li {
+  border-color: #000000;
+}
+
+.gizmo.yellow.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.yellow.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.yellow .gizmo-timeline li > span {
+  background-color: #FDD478;
+  color: #000000;
+}
+
+.gizmo.yellow.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.yellow.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.yellow h3 {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.yellow > a,
+  .gizmo.width2.yellow > a:before,
+  .gizmo.width2.yellow > a:after,
+  .gizmo.width3.yellow > a,
+  .gizmo.width3.yellow > a:before,
+  .gizmo.width3.yellow > a:after {
+    background-color: #FDD478;
+    color: #000000;
+  }
+}
+.gizmo.red {
+  border-top-color: #FA8B80;
+  background-color: #FA8B80;
+  background: linear-gradient(to bottom, #F26048 0%, #EF352A 100%);
+  color: #FFFFFF;
+}
+
+.gizmo.red .info-box-icon,
+.gizmo.red.info-box .progress-bar {
+  background-color: #FA8B80;
+  color: #FFFFFF;
+}
+
+.gizmo.red.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #FA8B80;
+}
+
+#gizmo-info.red > a {
+  background-color: #FA8B80;
+  color: #FFFFFF;
+}
+
+.gizmo.red .gizmo-timeline li {
+  border-color: #FFFFFF;
+}
+
+.gizmo.red.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.red.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.red .gizmo-timeline li > span {
+  background-color: #FA8B80;
+  color: #FFFFFF;
+}
+
+.gizmo.red.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.red.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.red h3 {
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.red > a,
+  .gizmo.width2.red > a:before,
+  .gizmo.width2.red > a:after,
+  .gizmo.width3.red > a,
+  .gizmo.width3.red > a:before,
+  .gizmo.width3.red > a:after {
+    background-color: #FA8B80;
+    background: linear-gradient(to bottom, #F26048 0%, #EF352A 100%);
+    color: #FFFFFF;
+  }
+}
+.gizmo.mint {
+  border-top-color: #53D3BA;
+  background-color: #53D3BA;
+  color: #000000;
+}
+
+.gizmo.mint .info-box-icon,
+.gizmo.mint.info-box .progress-bar {
+  background-color: #53D3BA;
+  color: #000000;
+}
+
+.gizmo.mint.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #53D3BA;
+}
+
+#gizmo-info.mint > a {
+  background-color: #53D3BA;
+  color: #000000;
+}
+
+.gizmo.mint .gizmo-timeline li {
+  border-color: #000000;
+}
+
+.gizmo.mint.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.mint.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.mint .gizmo-timeline li > span {
+  background-color: #53D3BA;
+  color: #000000;
+}
+
+.gizmo.mint.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.mint.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.mint h3 {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.mint > a,
+  .gizmo.width2.mint > a:before,
+  .gizmo.width2.mint > a:after,
+  .gizmo.width3.mint > a,
+  .gizmo.width3.mint > a:before,
+  .gizmo.width3.mint > a:after {
+    background-color: #53D3BA;
+    color: #000000;
+  }
+}
+.gizmo.purple {
+  border-top-color: #660066;
+  background-color: #660066;
+  background: linear-gradient(to bottom, #A487BA 0%, #8D6CAB 100%);
+  color: #FFFFFF;
+}
+
+.gizmo.purple .info-box-icon,
+.gizmo.purple.info-box .progress-bar {
+  background-color: #660066;
+  color: #FFFFFF;
+}
+
+.gizmo.purple.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #660066;
+}
+
+#gizmo-info.purple > a {
+  background-color: #660066;
+  color: #FFFFFF;
+}
+
+.gizmo.purple .gizmo-timeline li {
+  border-color: #FFFFFF;
+}
+
+.gizmo.purple.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.purple.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.purple .gizmo-timeline li > span {
+  background-color: #660066;
+  color: #FFFFFF;
+}
+
+.gizmo.purple.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.purple.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.purple h3 {
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.purple > a,
+  .gizmo.width2.purple > a:before,
+  .gizmo.width2.purple > a:after,
+  .gizmo.width3.purple > a,
+  .gizmo.width3.purple > a:before,
+  .gizmo.width3.purple > a:after {
+    background-color: #660066;
+    background: linear-gradient(to bottom, #A487BA 0%, #8D6CAB 100%);
+    color: #FFFFFF;
+  }
+}
+.gizmo.brown {
+  border-top-color: #663300;
+  background-color: #663300;
+  color: #000000;
+}
+
+.gizmo.brown .info-box-icon,
+.gizmo.brown.info-box .progress-bar {
+  background-color: #663300;
+  color: #000000;
+}
+
+.gizmo.brown.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #663300;
+}
+
+#gizmo-info.brown > a {
+  background-color: #663300;
+  color: #000000;
+}
+
+.gizmo.brown .gizmo-timeline li {
+  border-color: #000000;
+}
+
+.gizmo.brown.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.brown.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.brown .gizmo-timeline li > span {
+  background-color: #663300;
+  color: #000000;
+}
+
+.gizmo.brown.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.brown.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.brown h3 {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.brown > a,
+  .gizmo.width2.brown > a:before,
+  .gizmo.width2.brown > a:after,
+  .gizmo.width3.brown > a,
+  .gizmo.width3.brown > a:before,
+  .gizmo.width3.brown > a:after {
+    background-color: #663300;
+    color: #000000;
+  }
+}
+.gizmo.pink {
+  border-top-color: #FF3399;
+  background-color: #FF3399;
+  background: linear-gradient(to bottom, #EE62A2 0%, #DC4B89 100%);
+  color: #FFFFFF;
+}
+
+.gizmo.pink .info-box-icon,
+.gizmo.pink.info-box .progress-bar {
+  background-color: #FF3399;
+  color: #FFFFFF;
+}
+
+.gizmo.pink.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #FF3399;
+}
+
+#gizmo-info.pink > a {
+  background-color: #FF3399;
+  color: #FFFFFF;
+}
+
+.gizmo.pink .gizmo-timeline li {
+  border-color: #FFFFFF;
+}
+
+.gizmo.pink.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.pink.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.pink .gizmo-timeline li > span {
+  background-color: #FF3399;
+  color: #FFFFFF;
+}
+
+.gizmo.pink.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.pink.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.pink h3 {
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.pink > a,
+  .gizmo.width2.pink > a:before,
+  .gizmo.width2.pink > a:after,
+  .gizmo.width3.pink > a,
+  .gizmo.width3.pink > a:before,
+  .gizmo.width3.pink > a:after {
+    background-color: #FF3399;
+    background: linear-gradient(to bottom, #EE62A2 0%, #DC4B89 100%);
+    color: #FFFFFF;
+  }
+}
+.gizmo.slate {
+  border-top-color: #2F4F4F;
+  background-color: #2F4F4F;
+  color: #000000;
+}
+
+.gizmo.slate .info-box-icon,
+.gizmo.slate.info-box .progress-bar {
+  background-color: #2F4F4F;
+  color: #000000;
+}
+
+.gizmo.slate.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #2F4F4F;
+}
+
+#gizmo-info.slate > a {
+  background-color: #2F4F4F;
+  color: #000000;
+}
+
+.gizmo.slate .gizmo-timeline li {
+  border-color: #000000;
+}
+
+.gizmo.slate.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.slate.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.slate .gizmo-timeline li > span {
+  background-color: #2F4F4F;
+  color: #000000;
+}
+
+.gizmo.slate.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.slate.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.slate h3 {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.slate > a,
+  .gizmo.width2.slate > a:before,
+  .gizmo.width2.slate > a:after,
+  .gizmo.width3.slate > a,
+  .gizmo.width3.slate > a:before,
+  .gizmo.width3.slate > a:after {
+    background-color: #2F4F4F;
+    color: #000000;
+  }
+}
+.gizmo.orange {
+  border-top-color: #FF9900;
+  background-color: #FF9900;
+  background: linear-gradient(to bottom, #EC9F48 0%, #E68523 100%);
+  color: #FFFFFF;
+}
+
+.gizmo.orange .info-box-icon,
+.gizmo.orange.info-box .progress-bar {
+  background-color: #FF9900;
+  color: #FFFFFF;
+}
+
+.gizmo.orange.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #FF9900;
+}
+
+#gizmo-info.orange > a {
+  background-color: #FF9900;
+  color: #FFFFFF;
+}
+
+.gizmo.orange .gizmo-timeline li {
+  border-color: #FFFFFF;
+}
+
+.gizmo.orange.nav-tabs-custom > .nav-tabs > li.active > a,
+.gizmo.orange.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.gizmo.orange .gizmo-timeline li > span {
+  background-color: #FF9900;
+  color: #FFFFFF;
+}
+
+.gizmo.orange.nav-tabs-custom > .nav-tabs > li.header,
+.gizmo.orange.nav-tabs-custom > .nav-tabs > li > a,
+.gizmo.orange h3 {
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .gizmo.width2.orange > a,
+  .gizmo.width2.orange > a:before,
+  .gizmo.width2.orange > a:after,
+  .gizmo.width3.orange > a,
+  .gizmo.width3.orange > a:before,
+  .gizmo.width3.orange > a:after {
+    background-color: #FF9900;
+    background: linear-gradient(to bottom, #EC9F48 0%, #E68523 100%);
+    color: #FFFFFF;
+  }
+}

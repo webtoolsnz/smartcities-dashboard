@@ -55,7 +55,7 @@ In the project directory, create a new file called `environment.config.php` with
     ];    
     ```
 
-    Where `<dbname>`, `<dbuser>`, and `<dbpass>` are the database name, user, and password you created in step 2. <google-api-key> is an API key that you have registered for; you may leave this blank.
+    Where `<google-api-key>` is an API key that you have registered for; you may leave this blank.
 
 Database
 --------
@@ -105,7 +105,7 @@ Setup steps are:
     
     ```
 
-    Where `<dbname>`, `<dbuser>`, and `<dbpass>` are the database name, user, and password you created in step 2. <google-api-key> is an API key that you have registered for; you may leave this blank.
+    Where `<dbname>`, `<dbuser>`, and `<dbpass>` are the database name, user, and password you created in step 2. `<google-api-key>` is an API key that you have registered for; you may leave this blank.
 
 7. In the project directory, create a new file called `environment.php` with the following contents:
 

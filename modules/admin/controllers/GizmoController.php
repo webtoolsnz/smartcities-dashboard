@@ -112,4 +112,9 @@ class GizmoController extends Controller
             throw new HttpException(404, 'The requested page does not exist.');
         }
     }
+
+    public function actionHelp()
+    {
+        return $this->render('help');
+    }
 }

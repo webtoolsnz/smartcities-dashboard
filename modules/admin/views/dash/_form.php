@@ -37,9 +37,9 @@ use webtoolsnz\AdminLte\widgets\Box;
 
 <?php $this->beginBlock('box_content'); ?>
 
-<?= $form->field($model, 'name')->textInput() ?>
+<?= $form->field($model, 'name')->textInput()->hint('Name for the dashboard, displayed in the sidebar.') ?>
 <?= $form->field($model, 'description')->textInput() ?>
-<?= $form->field($model, 'slug')->textInput() ?>
+<?= $form->field($model, 'slug')->textInput()->hint('Unique identifier for the dashboard.') ?>
 
 <?= $form->field($model, 'status')->widget(RadioButtonGroup::className(), [
     'items' => Dash::getStatuses(),
@@ -48,11 +48,11 @@ use webtoolsnz\AdminLte\widgets\Box;
             Dash::STATUS_DELETED => ['activeState' => 'btn active btn-danger'],
         ]
     ]
-]); ?>
+])->hint('Inactive dashboards will not be displayed on the frontend.'); ?>
 
 <?= $form->field($model, 'icon', [
-    'template' => '{label} <div class="col-sm-2">{input}<a href="http://fontawesome.io/cheatsheet/"><i class="fa fa-question-circle"></i></a> {hint} {error}</div>',
-])->textInput() ?>
+    'template' => '{label} <div class="col-sm-3">{input}<a href="http://fontawesome.io/cheatsheet/"><i class="fa fa-question-circle"></i></a> {hint} {error}</div>',
+])->textInput()->hint('Optional icon to identify the dashboard.') ?>
 
 <?php echo $this->render('_dash_gizmos', ['model' => $model,]); ?>
 

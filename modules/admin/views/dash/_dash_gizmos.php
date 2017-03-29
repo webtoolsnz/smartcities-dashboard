@@ -32,6 +32,7 @@ use yii\web\View;
         <div class="table-responsive">
             <?= GridBox::widget([
                 'dataProvider' => $dataProvider,
+                'emptyText' => 'No gizmos on this dashboard. You can add gizmos using the dropdown below.',
                 'columns' => [
                     [
                         'value' => function($model){

@@ -13,3 +13,11 @@
 .field-dash-gizmos .box-footer {
     display: none;
 }
+
+.col-sm-3 > .help-block.col-sm-3 {
+    width: 100%;
+}
+
+.hilight {
+    background-color: #b4d100;
+}
